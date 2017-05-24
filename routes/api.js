@@ -8,9 +8,4 @@ router.put('/books/:id',controller.updateBook)
 router.delete('/books/:id',controller.deleteBook)
 
 
-
-
-
-
-
 module.exports = router;

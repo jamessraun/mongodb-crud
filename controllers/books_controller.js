@@ -2,8 +2,6 @@ var MongoClient = require('mongodb').MongoClient;
 var url = 'mongodb://localhost/library';
 var ObjectId = require('mongodb').ObjectID;
 
-
-
 var getAllBooks = (req,res) => {
   MongoClient.connect(url,(err,db)=> {
 
@@ -27,7 +25,6 @@ var createBook = (req,res) => {
     })
   })
 }
-
 
 var deleteBook = (req,res) => {
   MongoClient.connect(url,(err,db)=> {
